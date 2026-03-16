@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Beautiful Memories ✨</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Quicksand:wght@300;400;500;600&display=swap');
 
@@ -356,11 +357,61 @@
                 font-size: 2.5rem;
             }
         }
+
+        /* =========================================== */
+        .memory-img.myone {
+            height: 500px;
+        }
+
+        .memory-img.her_one {
+            height: 500px;
+        }
+
         @media (min-width: 320px) and (max-width: 575px) {
-            .memory-img.myone{
-             height: 148px;
+            .memory-img.myone {
+                height: 148px;
             }
 
+            .memory-img.her_one {
+                height: 385px;
+            }
+
+        }
+
+        @media (min-width: 320px) and (max-width: 768px) {
+            /* .memory-img.her_one {
+                display: none;
+            } */
+
+        }
+
+        .memory-img-wrapper {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            border-radius: 15px;  
+        }
+
+        .memory-img {
+            width: 100%;
+            display: block;
+            transition: opacity 0.9s ease;
+        }
+
+        .img-hover {
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            
+        }
+
+        .memory-card:hover .img-hover {
+            opacity: 3;
+        }
+
+        .memory-card:hover .img-default {
+            opacity: 0;
         }
     </style>
 </head>
@@ -399,7 +450,10 @@
 
     <div class="memory-container">
         <div class="memory-card">
-            <img src="./d1.jpg" alt="Memory" class="memory-img">
+            <div class="memory-img-wrapper">
+                <img src="./d1.jpg" alt="Memory" class="memory-img img-default">
+                <img src="./her_smile.png" class="memory-img img-hover" alt="Memory">
+            </div>
             <div class="memory-date">That Smile</div>
             <div class="memory-caption">
                 I don’t know why, but your smile always looks genuine.
@@ -409,18 +463,24 @@
         </div>
 
         <div class="memory-card">
-            <img src="./Ammu_&_pandhi.jpeg" alt="Memory" class="memory-img">
-            <div class="memory-date">Random Conversations</div>
+            <div class="memory-img-wrapper">
+                <img src="./Ammu_&_pandhi.jpeg" alt="Memory" class="memory-img img-default">
+                <img src="./pandhi_&_ammu.jpeg" class="memory-img img-hover" alt="Memory">
+            </div>
+            <div class="memory-date">The Most Beautiful Part Of My Life</div>
             <div class="memory-caption">
-                Some conversations are just normal…
-                but with you they somehow become fun without trying too hard.
-                Maybe that’s just your vibe.
+                Happiest birthday meri jann💞love u more 🥰everytime I felt like ur presence made my day more
+                beautiful🧿❤️No one can replace ur place in my life💗ur support 🫂ur love💕ur trust🤌🏻everything melts
+                my heart 🤍
             </div>
         </div>
 
-        
+
         <div class="memory-card">
-            <img src="./d3.jpg" alt="Memory" class="memory-img">
+            <div class="memory-img-wrapper">
+                <img src="./d3.jpg" alt="Memory" class="memory-img img-default">
+                <img src="./pandhi.jpeg" class="memory-img img-hover" alt="Memory">
+            </div>
             <div class="memory-date">Just You Being You</div>
             <div class="memory-caption">
                 One thing I like about you is that you’re just yourself.
@@ -429,10 +489,13 @@
             </div>
         </div>
     </div>
-    
+
     <div class="memory-container">
-    <div class="memory-card">
-            <img src="./Aalekhya_&_pandhi.jpeg" alt="Memory" class="memory-img">
+        <div class="memory-card">
+            <div class="memory-img-wrapper">
+                <img src="./Aalekhya_&_pandhi1.jpeg" alt="Memory" class="memory-img img-default her_one">
+                <img src="./Aalekhya_&_pandhi2.jpeg" class="memory-img img-hover her_one" alt="Memory">
+            </div>
             <div class="memory-date">A sweet warning 🙂‍↔️</div>
             <div class="memory-caption">
                 Priya em chpali ni gurinchi oka stranger ga parichiyam ayi na life lo main important person ga
@@ -440,16 +503,21 @@
                 Nenu kopadina chirakpadina headache thepinchina em chsina nuv nathoney vunnav.. basic ga nuv
                 nathovunnantha close ga vere vallatho vuntey asl thiskolenu may be dhaney possessiveness antar emo
                 adhento ah feeling ni vishiyamloney matramey vstundi..nuv nannu intha baristhunanduku nikosam na kopani
-                chirakuni ani thaginchukoni nik nachinattu vundam anukuntuna "KOPAM MARICHANU GA IDHI NI MAHIMA" and you
-                are the person who accepts my real personality..Nitho vunan antha sepu ela anipisthundo telusa "EH
-                ANANDAM LO SADHA VUNDAL ANIPISTHUNDHEY "annatu ga. At last nuv antey nak entha istam antey " idhi
+                chirakuni ani thaginchukoni nik nachinattu vundam anukuntuna <strong>"KOPAM MARICHANU GA IDHI NI
+                    MAHIMA"</strong> and you
+                are the person who accepts my real personality..Nitho vunan antha sepu ela anipisthundo telusa
+                <strong>"EH
+                    ANANDAM LO SADHA VUNDAL ANIPISTHUNDHEY "</strong>annatu ga. At last nuv antey nak entha istam antey
+                " idhi
                 manasuku matramey telisey feeling kavalntey chadauvuko manasuthoo..
                 Idhi antha chadivaka ni face lo smile vastundi alagey eppudu life antha manchiga navuthu vundu...
                 Last but not least dont dare to leave its not a sweet warning, its a serious warning hehehe vurikey ana
-                ley vuntav ley ah n
+                ley vuntav ley ah nammakam nuv ichindhey...
+                Thanks for being my main chpater in my life i loveyouu jaann
+                I always be your Alakananda
             </div>
         </div>
-        </div>
+    </div>
 
 
     <section class="final-message">
@@ -462,11 +530,11 @@
 
         <p>
             On your birthday, I just hope life gives you more reasons to smile.
-            And yeah… keep being the same person you are.
+            And yeah… keep being the same person you are. 🥰
             It suits you well.
         </p>
 
-        <a href="#" class="goodbye-btn">See You Around 🙂</a>
+        <a href="#" class="goodbye-btn">Inka Anthe pilla puchakai 🍉</a>
     </section>
 </body>
 
